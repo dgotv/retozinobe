@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="/css/editObjectives.css">
+
+<section class="growthId">
+  <div class="edit-GrowthId">
+    <div class="edit-titleDescription">
+      <h3>{{ GrowthAdd.title}}</h3>
+      <h4>{{GrowthAdd.description}}</h4>
+    </div>
+    <section class="objectives-tejopoints">
+
+      {{!-- //esperar a modificar el action// --}}
+      <form action="" method="post" class="objectives__tejopoints--form">
+
+        <div class="objetives">
+          <h3> crear objetivo</h3>
+
+          <textarea name="objective" id="objective" cols="30" rows="10" placeholder="objetivo"></textarea>
+
+        </div>
+        <div class="tejopoints">
+          <h3>valor en tejopoints</h3>
+          <input class="tejoPoints" type="number" name="tejoPoints" placeholder="tejopoints">
+
+        </div>
+        <button class="button" type="submit">guardar objetivos</button>
+
+    </section>
+  </div>
+
+</section>
+
+<section class="views">
+  <h2>objetivos creados {{ GrowthAdd.title}}</h2>
+  <div class="views-objectives">
+    <div class="container-objectives">
+
+    </div>
+    <div class="container-tejopoints">
+      <h2>tejopoints</h2>
+      <h2>
+        {{newObjetive.tejoPoinst}}
+
+      </h2>
+    </div>
+
+
+  </div>
+
+
+</section>
+
+</html>

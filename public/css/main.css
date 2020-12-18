@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  background-color: rgb(92, 81, 195);
+}
+
+/* header {
+  width: 1000px;
+} */
+footer {
+  height: 50px;
+}

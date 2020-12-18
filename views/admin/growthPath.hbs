@@ -1,0 +1,75 @@
+<html>
+
+<link rel="stylesheet" href="/css/growthPath.css">
+
+
+<body>
+  <p>rutas de crecimiento</p>
+  <section class="newgrowth">
+    <div class="edit-route">
+      <h3>Crear ruta de crecimiento</h3>
+      <form action="" method="post" class="form-growthPath">
+        <div>
+          <input type="text" name="title" class="title" placeholder="Nombre de la Ruta" autofocus>
+        </div>
+        <div>
+          <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción"></textarea>
+
+        </div>
+
+        <div>
+          <button class="button" name="button" type="submit">
+            Guardar Ruta
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <div>
+
+
+    </div>
+
+    <div>
+
+      <img class="img" src="/img/crecimiento.png" alt="">
+
+    </div>
+
+
+  </section>
+
+  <p>rutas creadas</p>
+  <section class="growthPath-create">
+    <div class="new-create">
+      {{#each pathList}}
+      <div class="individual-path">
+        <h3>{{title}}</h3>
+        <h4>{{description}}</h4>
+
+        <a href="editObjectives/{{_id}}">editar</a>
+
+
+      </div>
+
+
+
+      {{/each}}
+      <div class="obj">
+
+        {{#each objectives}}
+
+        <h2>{{objectives.objective}}</h2>
+        <h3>{{tejoPoints}}</h3>
+
+        {{/each}}
+      </div>
+
+
+    </div>
+
+  </section>
+</body>
+
+</html>

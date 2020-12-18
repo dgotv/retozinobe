@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de usuario</title>
+</head>
+
+<body>
+  <h2>Perfil del Usuaio
+  </h2>
+  <form action="" method="get">
+    {{!-- <p>{{userId}}</p>
+    {{!-- <p>{{id}}</p>
+
+    {{!-- <p>{{userName}}</p> --}} --}} --}}
+
+    {{#each userFound}}
+    {{#each roles}}
+    <h3>opción de Perfil: {{name}}</h3>
+    {{/each}}
+
+    <h4>{{userName}}</h4>
+    <h4>{{mail}}</h4>
+    {{/each}}
+    <div>
+      <a href="/admin/listUser">
+        <h2>Administrador </h2>
+      </a>
+      <a href="/admin/listUser">
+        <h2>Usuario </h2>
+      </a>
+      <div>
+
+        <p>
+          {{user.userName}}
+          {{#each user.roles}}
+        <p>{{name}}</p>
+        {{/each}}
+
+        </p>
+
+      </div>
+
+    </div>
+    {{!-- <h1>{{userFound}}</h4> --}}
+
+
+    {{#if token}}
+    <script type="text/javascript" async>
+      const token = "{{ token }}";
+      localStorage.setItem("token", token)
+
+    </script>
+    {{/if}}
+  </form>
+</body>
+
+</html>

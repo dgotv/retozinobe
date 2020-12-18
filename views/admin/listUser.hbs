@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/listUser.css">
+
+  <title>editar usuarios</title>
+</head>
+
+<body>
+  <p>Lista de usuarios</p>
+  <div>
+    <a href="growthPath">rutas de crecimiento</a>
+  </div>
+  <section class="edit_user">
+    <p>permisos de administrador</p>
+    <div class="list_user">
+      <p>lista de usuarios</p>
+      {{!-- <form action="">
+        <div id="edit_user-delete" class="edit_user-delete">
+          <input type="text" name="userName" class="form-username" placeholder="nombre de usuario"
+            value="{{userId.userName}}">
+
+        </div>
+
+      </form> --}}
+      {{!-- <form action="">
+        <div id="edit_user-delete" method="post" class="edit_user-delete">
+          <input class="form-username" type="text" name="userName" placeholder="nombre de usuario"
+            value="{{userId.userName}}">
+          <input class="input" type="password" name="password" placeholder="Contraseña">
+          <input class="input" type="password" name="confirmPassword" placeholder="Confirma tu contraseña">
+
+          <button class="save" type="submit">Guardar cambios</button>
+        </div>
+
+      </form>
+ --}}
+
+
+      <div class="user">
+        {{#each users}}
+        <div class="user_object">
+          <h4>{{userName}}
+            <h4>{{mail}}</h4>
+
+            <a href="editUser/{{_id}}">editar</a>
+
+
+          </h4>
+
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <img class="img-h" src="/img/ad.png" width="400px" alt="">
+
+  </section>
+
+
+</body>
+
+</html>

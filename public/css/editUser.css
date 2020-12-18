@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  /* color: brown; */
+}
+
+.save {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(97, 24, 165, 0.733);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+.edit_user-delete {
+  border: 2px solid rgb(18, 23, 95);
+  border-radius: 10px;
+  padding: 10px 300px 10px 50px;
+  height: 200px;
+  width: 100px;
+}

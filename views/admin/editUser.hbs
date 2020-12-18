@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/editUser.css">
+  <title>editar usuario</title>
+</head>
+{{!-- /?_method=PUT --}}
+
+<body>
+  {{!-- <form action=""> --}}
+  <p>permisos de administrador</p>
+  <form action="?_method=put" method="post" class="edit_user">
+    <input type="hidden" name="_method" value="put">
+    <p>Editar usuario</p>
+    <div id="edit_user-delete" class="edit_user-delete">
+      <input type="text" name="userName" class="form-username" placeholder=" editar nombre de usuario"
+        value="{{userId.userName}}">
+      <input type="text" name="mail" class="form-mail" placeholder="editar correo" value="{{userId.mail}}">
+      <input class="input" type="password" name="password" placeholder="Contraseña">
+      <input class="input" type="password" name="confirmPassword" placeholder="Confirma tu contraseña">
+
+      <button class="save" type="submit">Guardar cambios</button>
+
+
+    </div>
+
+  </form>
+
+</body>
+
+</html>
